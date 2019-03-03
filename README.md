@@ -1,3 +1,4 @@
+![Alt text](src/assets/logo.png?raw=true "Vue Search")![Alt text](src/assets/logo.png?raw=true "Vue Search")
 ![Alt text](src/assets/logo.png?raw=true "Vue Search")
 # Vue Responsive Search
 ### A Responsive Client side search with filters made using Vue.js, Bootstrap4, Flexbox. 
