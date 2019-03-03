@@ -17,16 +17,6 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
 ## This Project has been created using <a href="https://cli.vuejs.org/">  VUE CLI </a>
 ```
 npm install -g @vue/cli
