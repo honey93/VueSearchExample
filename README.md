@@ -26,3 +26,10 @@ npm run test
 ```
 npm run lint
 ```
+
+## This Project has been created using <a href="https://cli.vuejs.org/">  VUE CLI </a>
+```
+npm install -g @vue/cli
+vue create project-name 
+
+```
