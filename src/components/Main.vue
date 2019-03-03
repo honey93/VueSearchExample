@@ -77,7 +77,7 @@ export default {
     var inside = this;
 
     axios
-      .get("http://www.mocky.io/v2/5c7b98562f0000c013e59f07")
+      .get("https://www.mocky.io/v2/5c7b98562f0000c013e59f07")
       .then(function(response) {
         //console.log(response);
 
