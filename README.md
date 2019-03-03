@@ -1,4 +1,4 @@
-# rupeek
+# Vue Responsive Search
 
 ## Project setup
 ```
