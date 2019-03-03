@@ -1,5 +1,4 @@
-![Alt text](src/assets/logo.png?raw=true "Vue Search")
-<img src="src/assets/logo.png" width="50">
+<p align="center"><img src="src/assets/logo.png" width="50" > </p>
 ### A Responsive Client side search with filters made using Vue.js, Bootstrap4, Flexbox. 
 ## Project setup
 ```
