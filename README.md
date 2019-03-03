@@ -1,4 +1,4 @@
-<p align="center"><img src="src/assets/logo.png" width="50" > </p>
+<p align="center"><img src="src/assets/logo.png" width="50" > <a href="https://bootstrap-vue.js.org/" target="_blank"> <img src="https://bootstrap-vue.js.org/_nuxt/img/f0a8c9e.png" width="50"> </a> </p>
 
 ### A Responsive Client side search with filters made using Vue.js, Bootstrap4, Flexbox. 
 ## Project setup
