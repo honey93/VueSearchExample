@@ -1,4 +1,5 @@
 <p align="center"><img src="src/assets/logo.png" width="50" > </p>
+
 ### A Responsive Client side search with filters made using Vue.js, Bootstrap4, Flexbox. 
 ## Project setup
 ```
