@@ -1,32 +1,34 @@
 <template>
   <div>
     <Header/>
-    <div class="pad-15-hor pad-15-ver search-parent">
-      <div class="search-bar">
-        <b-form-input
-          @input="search_text()"
-          v-model="search.text"
-          type="text"
-          placeholder="Search by Name"
-        ></b-form-input>
-        <span class="search-icon">
-          <i class="fas fa-search"></i>
-        </span>
-      </div>
-      <div>
-        <span class="bold">Total Likes:</span>
-        {{likes.count}}
-        <span class="bold">Hits:</span>
-        {{likes.hit}}
-      </div>
-      <div>
-        <b-form-select @input="sort()" v-model="search.filter" :options="options"/>
+    <div class="search">
+      <div class="pad-15-hor pad-15-ver search-parent">
+        <div class="search-bar" >
+          <b-form-input
+            @input="search_text()"
+            v-model="search.text"
+            type="text"
+            placeholder="Search by Name"
+          ></b-form-input>
+          <span class="search-icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <div>
+          <span class="bold">Total Likes:</span>
+          {{likes.count}}
+          <span class="bold">Hits:</span>
+          {{likes.hit}}
+        </div>
+        <div>
+          <b-form-select @input="sort()" v-model="search.filter" :options="options"/>
+        </div>
       </div>
     </div>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 pad-15-ver" v-for="wonder in wonders_data" :key="wonder.id">
+        <div class="col-md-6 pad-15-ver card" v-for="wonder in wonders_data" :key="wonder.id">
           <div
             class="card-inner"
             @mouseover="show_hover(true,wonder.id)"
@@ -180,101 +182,8 @@ export default {
 
 
 
-<style scoped>
-.header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.search-parent {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  background-color: lightgray;
-}
-
-.card-inner {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 2px 2px 8px grey;
-}
-
-.card-img {
-  width: 100%;
-}
-
-.card-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 30px;
-  width: 100%;
-  background-color: white;
-  opacity: 0.7;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-hover {
-  position: absolute;
-  right: 15px;
-  left: 15px;
-  top: 15px;
-  bottom: 15px;
-  background-color: white;
-  opacity: 0.7;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-.absolute-star {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.card-hover p {
-  font-size: 10px;
-  text-align: center;
-}
-
-.bold {
-  font-weight: 500;
-}
-
-.rating-div {
-  width: 200px;
-}
-
-.search-bar {
-  position: relative;
-}
-.search-bar input {
-  padding-left: 30px;
-}
-
-.search-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-}
-
-@media screen and (max-width: 550px) {
-  .search-parent {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-  }
-
-  .search-parent div {
-    width: 100%;
-    text-align: center;
-  }
-}
+<style scoped  lang="scss">
+  @import "../styles/main.scss";
 </style>
 
 

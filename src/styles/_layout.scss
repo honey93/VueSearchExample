@@ -1,0 +1,22 @@
+// layout scss goes here
+@import 'variables';
+
+.pad-15-hor {
+    padding: 0px 15px;
+}
+
+.pad-15-ver {
+    padding: 15px 0px;
+}
+
+.green {
+    color: $color-green;
+}
+
+.max-width-160 {
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    text-align: right;
+}

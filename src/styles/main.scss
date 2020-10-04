@@ -1,0 +1,89 @@
+// scss for the main component
+
+@import 'variables';
+@import 'responsive';
+
+.search {
+    &-parent {
+        padding: 10px 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-lightgray;
+    }
+
+    &-bar {
+        position: relative;
+
+        input {
+            padding-left: 30px;
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+}
+
+.card {
+
+    &-inner {
+        position: relative;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px $box-shadow-grey;
+    }
+
+    &-img {
+        width: 100%;
+    }
+
+    &-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+        background-color: $color-white;
+        opacity: 0.7;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-hover {
+        position: absolute;
+        right: 15px;
+        left: 15px;
+        top: 15px;
+        bottom: 15px;
+        background-color: $color-white;
+        opacity: 0.7;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}
+
+.absolute-star {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.bold {
+    font-weight: $bold500;
+}
+
+.rating-div {
+    width: 200px;
+}
