@@ -1,0 +1,24 @@
+// all media queries goes here
+// dont forget to import this whereever applicable.
+
+// Main Component
+@media screen and (max-width:550px) {
+  .min-width-160 {
+    min-width: 160px;
+  }
+
+  .search {
+    &-parent {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgray;
+
+      div {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
