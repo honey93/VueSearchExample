@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.11",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.3.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
